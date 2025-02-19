@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: white;
+}
+
+//sidebar css open
+.custom-checkbox,
+.custom-radio {
+  accent-color: #BC7B18;
+}
+
+.custom-range {
+  -webkit-appearance: none; /* Hides the default range input style */
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(
+    to right,
+    #BC7B18 0%,
+    #BC7B18 calc((var(--value) - var(--min)) / (var(--max) - var(--min)) * 100%),
+    #e5e7eb calc((var(--value) - var(--min)) / (var(--max) - var(--min)) * 100%),
+    #e5e7eb 100%
+  );
+  outline: none;
+  border-radius: 10px;
+  position: relative;
+}
+
+.custom-range::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Hides the default thumb */
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #BC7B18;
+  cursor: pointer;
+  position: relative;
+}
+
+.custom-range::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #BC7B18;
+  cursor: pointer;
+}
+
+.range-ball {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #BC7B18;
+}
+
+
+//sidebar css close
+.lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.hero-section {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+  @media (min-width: 768px) {
+    content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: -20px;
+      top: 30px;
+      z-index: 1;
+      background: url("/leftHeroBlob.svg") no-repeat;
+    }
+  }
+
+  &::after {
+  @media (min-width: 768px) {
+    content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 45%;
+      top: -40px;
+      z-index: 1;
+      transform: scale(0.85);
+      background: url("/rightHeroBlob.svg") no-repeat;
+    }
+  }
+}
+
+.short-underline {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 3px;
+    width: 65%;
+    background: #BC7B18;
+  }
+}
