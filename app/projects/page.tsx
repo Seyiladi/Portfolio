@@ -1,10 +1,11 @@
 import React from "react";
-import ImageGallery from "./ImageGallery";
 
 function page() {
   return (
     <div>
-      <ImageGallery />
+      <h1 className="text-primary-100 text-4xl font-bold flex justify-center items-center mt-10 ">
+        Under construction
+      </h1>
     </div>
   );
 }
