@@ -18,6 +18,12 @@ import More from "@/assets/More.svg";
 import Indesign from "@/assets/Indesign.svg";
 import MoreMobile from "@/assets/MoreMobile.svg";
 import Link from "next/link";
+import RevitSVG from "@/assets/RevitSVG.svg";
+import NaviSVG from "@/assets/NavSVG.svg";
+import AutocadSVG from "@/assets/AutocadSVG.svg";
+import BIMSVG from "@/assets/BIMSVG.svg";
+import PotoshopSVG from "@/assets/PSSVG.svg";
+import IDSVG from "@/assets/IDSVG.svg";
 
 export default function Home() {
   const [viewAll, setViewAll] = useState(false);
@@ -75,35 +81,43 @@ export default function Home() {
           </Link>
         </div>
         <div className="flex justify-between flex-wrap">
-          <div className="w-[343px] h-[302px] md:w-[584px] md:h-[224px] bg-white rounded-md p-4 md:flex md:justify-between mt-6">
-            <div className="flex flex-col">
-              <h2 className="hidden md:block md:text-[24px] text-black">
-                Architectural <br /> Practice
-              </h2>
-              <h2 className="block md:hidden md:text-[24px] text-black">
-                Architectural Practice
-              </h2>
-              <p className="text-[16px] text-[#008B8B] md:mt-28">8 projects</p>
+          <Link href="/projects">
+            <div className="w-[343px] h-[302px] md:w-[584px] md:h-[224px] bg-white rounded-md p-4 md:flex md:justify-between mt-6">
+              <div className="flex flex-col">
+                <h2 className="hidden md:block md:text-[24px] text-black">
+                  Architectural <br /> Practice
+                </h2>
+                <h2 className="block md:hidden md:text-[24px] text-black">
+                  Architectural Practice
+                </h2>
+                <p className="text-[16px] text-[#008B8B] md:mt-28">
+                  8 projects
+                </p>
+              </div>
+              <Image
+                src={ArchitecturalImg}
+                alt="arc-des"
+                className="hidden md:block"
+              />
+              <Image
+                src={ArchiMobile}
+                alt="arc-des"
+                className="md:hidden block"
+              />
             </div>
-            <Image
-              src={ArchitecturalImg}
-              alt="arc-des"
-              className="hidden md:block"
-            />
-            <Image
-              src={ArchiMobile}
-              alt="arc-des"
-              className="md:hidden block"
-            />
-          </div>
-          <div className="w-[343px] h-[302px] md:w-[584px] md:h-[224px] bg-white rounded-md p-4 md:flex md:justify-between mt-6">
-            <div className="flex flex-col">
-              <h2 className=" md:text-[24px] text-black">BIM</h2>
+          </Link>
+          <Link href="/projects">
+            <div className="w-[343px] h-[302px] md:w-[584px] md:h-[224px] bg-white rounded-md p-4 md:flex md:justify-between mt-6">
+              <div className="flex flex-col">
+                <h2 className=" md:text-[24px] text-black">BIM</h2>
 
-              <p className="text-[16px] text-[#008B8B] md:mt-36">8 projects</p>
+                <p className="text-[16px] text-[#008B8B] md:mt-36">
+                  8 projects
+                </p>
+              </div>
+              <Image src={BIMImg} alt="arc-des" className="" />
             </div>
-            <Image src={BIMImg} alt="arc-des" className="" />
-          </div>
+          </Link>
           <div className="w-[343px] h-[302px] md:w-[584px] md:h-[224px] bg-white rounded-md p-4 md:flex md:justify-between mt-6">
             <div className="flex flex-col">
               <h2 className=" md:text-[24px] text-black">MEP</h2>
@@ -112,14 +126,30 @@ export default function Home() {
             </div>
             <Image src={MEPImg} alt="arc-des" className="" />
           </div>
-          <div className="w-[343px] h-[302px] md:w-[584px] md:h-[224px] bg-white rounded-md p-4 md:flex md:justify-between mt-6">
-            <div className="flex flex-col">
-              <h2 className=" md:text-[24px] text-black">University</h2>
+          <Link href="/projects">
+            <div className="w-[343px] h-[302px] md:w-[584px] md:h-[224px] bg-white rounded-md p-4 md:flex md:justify-between mt-6">
+              <div className="flex flex-col">
+                <h2 className=" md:text-[24px] text-black">University</h2>
 
-              <p className="text-[16px] text-[#008B8B] md:mt-36">8 projects</p>
+                <p className="text-[16px] text-[#008B8B] md:mt-36">
+                  8 projects
+                </p>
+              </div>
+              <Image src={UniversityImg} alt="arc-des" className="" />
             </div>
-            <Image src={UniversityImg} alt="arc-des" className="" />
-          </div>
+          </Link>
+          <Link href="/projects">
+            <div className="w-[343px] h-[302px] md:w-[584px] md:h-[224px] bg-white rounded-md p-4 md:flex md:justify-between mt-6">
+              <div className="flex flex-col">
+                <h2 className=" md:text-[24px] text-black">Structural</h2>
+
+                <p className="text-[16px] text-[#008B8B] md:mt-36">
+                  8 projects
+                </p>
+              </div>
+              <Image src={BIMImg} alt="arc-des" className="" />
+            </div>
+          </Link>
         </div>
       </section>
 
@@ -200,31 +230,41 @@ export default function Home() {
             </span>
           </div>
           <div className="flex justify-between flex-wrap">
-            <div className="bg-white mt-2">
-              <Image src={Revite} alt="revite" />
-            </div>
-            <div className="bg-white mt-2">
-              <Image src={Navi} alt="revite" />
+            <div className="w-[154.29px] h-[140px] gap-3 border border-[#D4D6DD] rounded-[6px] p-[16px_20px] flex flex-col justify-start items-center mt-2">
+              <Image src={RevitSVG} alt="logo" className="" />
+              <p className="text-center font-semibold text-black">Revit</p>
             </div>
 
-            <div className="bg-white mt-2">
-              <Image src={Autocad} alt="revite" />
+            <div className="w-[154.29px] h-[140px] gap-3 border border-[#D4D6DD] rounded-[6px] p-[16px_20px] flex flex-col justify-start items-center mt-2">
+              <Image src={NaviSVG} alt="logo" className="" />
+              <p className="text-center font-semibold text-black">Navisworks</p>
             </div>
-            <div className="bg-white mt-2">
-              <Image src={Bim360} alt="revite" />
+            <div className="w-[154.29px] h-[140px] gap-3 border border-[#D4D6DD] rounded-[6px] p-[16px_20px] flex flex-col justify-start items-center mt-2">
+              <Image src={AutocadSVG} alt="logo" className="" />
+              <p className="text-center font-semibold text-black">AutoCad</p>
             </div>
-            <div className="bg-white mt-2">
-              <Image src={Photoshop} alt="revite" />
+            <div className="w-[154.29px] h-[140px] gap-3 border border-[#D4D6DD] rounded-[6px] p-[16px_20px] flex flex-col justify-start items-center mt-2">
+              <Image src={BIMSVG} alt="logo" className="" />
+              <p className="text-center font-semibold text-black">BIM 360</p>
             </div>
-            <div className="bg-white mt-2">
-              <Image src={Indesign} alt="revite" />
+            <div className="w-[154.29px] h-[140px] gap-3 border border-[#D4D6DD] rounded-[6px] p-[16px_20px] flex flex-col justify-start items-center mt-2">
+              <Image src={PotoshopSVG} alt="logo" className="" />
+              <p className="text-center font-semibold text-black">Photoshopt</p>
             </div>
-            <Link href="/skills">
+            <div className="w-[154.29px] h-[140px] gap-3 border border-[#D4D6DD] rounded-[6px] p-[16px_20px] flex flex-col justify-end items-center mt-2">
+              <Image src={IDSVG} alt="logo" className="" />
+              <p className="text-center font-semibold text-black">Indesign</p>
+            </div>
+
+            <Link
+              href="/skills"
+              className="bg-white hidden md:block cursor-pointer"
+            >
               <div className="bg-white mt-2 hidden md:block cursor-pointer">
                 <Image src={More} alt="revite" />
               </div>
             </Link>
-            <Link href="/skills">
+            <Link href="/skills" className="bg-white mt-2 md:hidden block">
               <div className="bg-white mt-2 md:hidden block">
                 <Image src={MoreMobile} alt="revite" />
               </div>

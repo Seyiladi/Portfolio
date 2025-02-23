@@ -14,10 +14,8 @@ import Outside from "@/assets/Outside.png";
 import ProjectCover from "@/assets/ProjectCover.jpg";
 import Render from "@/assets/Render.jpg";
 import Link from "next/link";
-import HullProj from "@/assets/HullProj.svg";
-import BimProj from "@/assets/BimProj.svg";
-import ThirdProj from "@/assets/ThirdPro.svg";
-import SettingProj from "@/assets/SettingProj.svg";
+
+import { projects } from "./data/projects";
 
 function ImageGallery() {
   const images = [
@@ -51,68 +49,22 @@ function ImageGallery() {
     "All",
     "Architectural Practice",
     "BIM",
-    "Politecnico di Milano",
-    "University of Liverpool",
+    "MEP",
+    "Structural",
+    "University",
   ];
 
-  const projects = [
-    {
-      title: "CAD - Default",
-      category: "All",
-      image: BimProj,
-      slug: "cad-default",
-    },
-    {
-      title: "Two Hulls House",
-      category: "Architectural Practice",
-      image: HullProj,
-      slug: "cad-default",
-    },
-    {
-      title: "Turnbull Apartments",
-      category: "BIM",
-      image: ThirdProj,
-      slug: "cad-default",
-    },
-    {
-      title: "BIM Asset Development",
-      category: "Politecnico di Milano",
-      image: SettingProj,
-      slug: "cad-default",
-    },
-    {
-      title: "Merseyside Regional Assembly",
-      category: "University of Liverpool",
-      image: SettingProj,
-      slug: "cad-default",
-    },
-    {
-      title: "Merseyside Regional Assembly",
-      category: "University of Liverpool",
-      image: ThirdProj,
-      slug: "cad-default",
-    },
-    {
-      title: "Merseyside Regional Assembly",
-      category: "University of Liverpool",
-      image: HullProj,
-      slug: "cad-default",
-    },
-    {
-      title: "Merseyside Regional Assembly",
-      category: "University of Liverpool",
-      image: BimProj,
-      slug: "cad-default",
-    },
-    // Add more projects here...
-  ];
   const [activeTab, setActiveTab] = useState("All");
 
   const filteredProjects =
     activeTab === "All"
       ? projects
-      : projects.filter((project) => project.category === activeTab);
-
+      : projects.filter((project) =>
+          project.category
+            .split(",")
+            .map((cat) => cat.trim())
+            .includes(activeTab)
+        );
   return (
     <div>
       <div className="bg-[#17191F] text-white py-16 flex flex-col items-center justify-center">
@@ -160,22 +112,23 @@ function ImageGallery() {
         </div>
 
         {/* Small Thumbnails */}
-        <div className="flex justify-center items-center p-10">
-          <div className="flex justify-center  items-center space-x-4 mt-8 max-w-[1200px] overflow-x-auto overflow-y-hidden py-6 px-10 border border-gray-800 rounded-md">
+        <div className="flex justify-center items-center">
+          <div className="flex justify-start items-center space-x-4 mt-8 max-w-[1200px] overflow-x-auto overflow-y-hidden py-6 px-10 border rounded-md scrollbar-custom">
             {images.map((image, index) => (
               <div
                 key={index}
                 onClick={() => handleImageClick(index)}
-                className={`cursor-pointer border-2 p-2 h-[72px] min-w-[147px] flex justify-center items-center ${
-                  currentImage === index
-                    ? "border-gray-600"
-                    : "border-transparent"
+                className={`flex-none w-[147px] h-[72px] m-1 cursor-pointer border flex items-center justify-center ${
+                  currentImage === index ? "border-black" : "border-transparent"
                 }`}
               >
                 <Image
                   src={image}
                   alt={`Thumbnail ${index + 1}`}
-                  className=" object-contain  rounded-md mb-4"
+                  className="object-cover"
+                  style={{ maxHeight: "100%", maxWidth: "100%" }}
+                  width={147}
+                  height={96}
                 />
               </div>
             ))}
@@ -183,15 +136,15 @@ function ImageGallery() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto p-4">
+      <div className="max-w-7xl mx-auto p-4 mb-[108px]">
         {/* Tab Navigation */}
-        <div className="flex justify-center overflow-x-auto mb-6">
+        <div className="flex justify-start md:justify-center overflow-x-auto mb-6">
           <div className="flex space-x-8 border-b border-gray-300">
             {categories.map((category) => (
               <button
                 key={category}
                 onClick={() => setActiveTab(category)}
-                className={`inline-block text-sm font-semibold pb-2 px-4 border-b-2 ${
+                className={`inline-block text-sm font-semibold pb-2 px-4 border-b-2 text-nowrap ${
                   activeTab === category
                     ? "border-primary-100 text-primary-100"
                     : "border-transparent text-gray-700"
