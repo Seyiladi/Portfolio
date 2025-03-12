@@ -49,22 +49,23 @@ export default function Navbar() {
               alt="Profile"
               className="w-8 h-8 rounded-full"
             />
-            <span className="text-[20px] font-semibold">
-              Seyi <span className="text-primary-100">Oladimeji</span>
+            <span className="text-[20px] font-semibold font-satoshi">
+              Seyi{" "}
+              <span className="text-primary-100 font-satoshi">Oladimeji</span>
             </span>
           </div>
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex space-x-6 text-gray-700">
+        <div className="hidden md:flex space-x-6 text-gray-700 font-satoshi">
           {navItems.map((item) => (
             <Link
               key={item.name}
               href={item.href}
               className={`hover:text-[#008B8B] ${
                 pathname.includes(item.href)
-                  ? "text-primary-100 text-[18px] border-b-2 border-primary-100 font-semibold mb-1"
-                  : "text-[18px] font-semibold"
+                  ? "text-primary-100 text-[18px] border-b-2 border-primary-100 font-semibold mb-1 font-satoshi"
+                  : "text-[18px] font-semibold font-satoshi"
               }`}
             >
               {item.name}
@@ -91,10 +92,11 @@ export default function Navbar() {
               className="w-8 h-8 rounded-full"
             />
             <span className="text-lg font-semibold">
-              Seyi <span className="text-primary-100">Oladimeji</span>
+              Seyi{" "}
+              <span className="text-primary-100 font-satoshi">Oladimeji</span>
             </span>
           </div>
-          <span className="text-[#82858F] uppercase text-[12px]">
+          <span className="text-[#82858F] uppercase text-[12px] font-satoshi">
             Main Menu
           </span>
           <div className="mt-2 space-y-4">
@@ -102,10 +104,10 @@ export default function Navbar() {
               <Link
                 key={item.name}
                 href={item.href}
-                className={`block text-gray-700 pl-4 border-l-4 ${
+                className={`block text-gray-700 pl-4 border-l-4font-satoshi${
                   pathname.includes(item.href)
-                    ? "border-primary-100 text-primary-100 text-[18px] font-semibold bg-white"
-                    : "border-transparent"
+                    ? "border-primary-100 text-primary-100 text-[18px] font-semibold bg-white font-satoshi"
+                    : "border-transparent font-satoshi"
                 }`}
                 onClick={() => setIsOpen(false)} // Close menu when clicking a link
               >

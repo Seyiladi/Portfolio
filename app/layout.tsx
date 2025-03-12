@@ -32,20 +32,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
+      <head>
         <link
-          href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Satoshi:wght@400;500;600&display=swap"
           rel="stylesheet"
         />
-
-        {/* Google AdSense Script */}
-
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2234738000342371"
-          crossOrigin="anonymous"
-        ></script>
-      </Head>
+      </head>
       <body className={openSans.className}>
         <AppRouterCacheProvider>
           <GlobalCssPriority>

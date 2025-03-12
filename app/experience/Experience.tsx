@@ -5,10 +5,11 @@ import INGI from "@/assets/INGIN.svg";
 import DoubleUpp from "@/assets/DoubleUp.svg";
 import DoubleDown from "@/assets/DoubleDown.svg";
 import BimObject from "@/assets/BimObject.svg";
-import Skein from "@/assets/Skein.svg";
+import Skein from "@/assets/SSkein.svg";
 import Marco from "@/assets/Marco.svg";
 import FMA from "@/assets/FMA.svg";
 import Harcourt from "@/assets/Harcourt.svg";
+import PhNew from "@/assets/PhNew.svg";
 
 function Experience() {
   const [isCollapsed, setIsCollapsed] = useState(true);
@@ -47,15 +48,15 @@ function Experience() {
         <div className="max-w-7xl mx-auto px-6 text-center">
           {/* Skills Section */}
 
-          <div className="inline-block py-2 px-6 bg-[#008B8B1F] rounded-full text-[#008B8B] text-sm font-medium mb-4">
+          <div className="inline-block py-2 px-6 bg-[#008B8B1F] rounded-full text-[#008B8B] text-sm font-medium mb-4 font-satoshi">
             EXPERIENCE
           </div>
-          <h2 className="text-2xl font-semibold mb-4">
+          <h2 className="text-2xl font-semibold mb-4 font-satoshi">
             More on my Professional Experience.
           </h2>
 
           {/* Subtitle / Description */}
-          <p className=" text-[#82858F] text-[20px] mb-8 md:px-28 leading-8 ">
+          <p className=" text-[#82858F] text-[20px] mb-8 md:px-28 leading-8 font-satoshi ">
             My experience spans across various sectors, where I have ensured
             seamless model coordination, clash detection, and data-driven
             decision-making. Explore my journey and see how my expertise in
@@ -94,13 +95,13 @@ function Experience() {
               </div>
               <p className="text-[#17191F] text-[16px]">BIM MEP Coordinator.</p>
 
-              <ul className="space-y-2 text-[#82858F] p-2">
+              <ul className="space-y-2 text-[#82858F] font-satoshi list-disc pl-5">
                 <li className="text-sm">
-                  • Research and Development for optimization of systems and
+                  Research and Development for optimization of systems and
                   procedures
                 </li>
                 <li className="text-sm">
-                  • Modelling and Coordination of HVAC, Electrical and Plumbing
+                  Modelling and Coordination of HVAC, Electrical and Plumbing
                   Distribution Networks (Systems, Fixtures, Equipments and
                   Fittings)
                 </li>
@@ -108,16 +109,15 @@ function Experience() {
                   className={`${isCollapsed ? "hidden" : ""} text-[#82858F]`}
                 >
                   <li className="text-sm">
-                    • Production of MEP construction drawings
+                    Production of MEP construction drawings
                   </li>
                   <li className="text-sm">
-                    • Expert Family Optimization, Parameters, and Standard
+                    Expert Family Optimization, Parameters, and Standard
                     Management
                   </li>
                   <li className="text-sm">
-                    • Collaboration with multiple parties (inc. Project
-                    Engineers, On-site Contractors, Architects and
-                    Manufacturers)
+                    Collaboration with multiple parties (inc. Project Engineers,
+                    On-site Contractors, Architects and Manufacturers)
                   </li>
                 </div>
               </ul>
@@ -155,40 +155,40 @@ function Experience() {
             <Image
               src={Skein}
               alt="Ingrinn logo"
-              className="hidden md:block self-start"
+              className="hidden md:block self-start   border-[#000000] border-2"
             />
             <Image
               src={Skein}
               alt="Ingrinn logo"
-              className="md:hidden block h-[48px] w-[144px]"
+              className="md:hidden block h-[48px] w-[144px] border-[#000000] border-2"
             />
             <div className="md:ml-4 w-full">
               <div className="flex flex-col md:flex-row md:justify-between">
-                <p className="text-[#17191F] text-[20px] font-semibold">
+                <p className="text-[#17191F] text-[20px] font-semibold font-satoshi">
                   Skein BIM. Italy.
                 </p>
-                <p className="text-primary-100">Mar 2021 - Mar 2022</p>
+                <p className="text-primary-100 font-satoshi">
+                  Mar 2021 - Mar 2022
+                </p>
               </div>
-              <p className="text-[#17191F] text-[16px]">Lead BIM Technician.</p>
+              <p className="text-[#17191F] text-[16px] font-satoshi">
+                Lead BIM Technician.
+              </p>
 
-              <ul className="space-y-2 text-[#82858F] p-2">
+              <ul className="space-y-2 text-[#82858F]  font-satoshi list-disc pl-5">
+                <li className="text-sm">Work-flow Definition and Management</li>
                 <li className="text-sm">
-                  • Work-flow Definition and Management
-                </li>
-                <li className="text-sm">
-                  • Technical Project Management: Fostering Teamwork and
+                  Technical Project Management: Fostering Teamwork and
                   Productivity
                 </li>
                 <div
                   className={`${isCollapsed2 ? "hidden" : ""} text-[#82858F]`}
                 >
                   <li className="text-sm">
-                    • BIM Content Development and Data Management for Technical
+                    BIM Content Development and Data Management for Technical
                     Products
                   </li>
-                  <li className="text-sm">
-                    • Quality Assessment of BIM Assets
-                  </li>
+                  <li className="text-sm">Quality Assessment of BIM Assets</li>
                 </div>
               </ul>
               <button
@@ -234,32 +234,36 @@ function Experience() {
             />
             <div className="md:ml-4 w-full">
               <div className="flex flex-col md:flex-row md:justify-between">
-                <p className="text-[#17191F] text-[20px] font-semibold">
+                <p className="text-[#17191F] text-[20px] font-semibold font-satoshi">
                   BIMobject. Italy.
                 </p>
-                <p className="text-primary-100">Feb 2020 - Feb 2021</p>
+                <p className="text-primary-100 font-satoshi">
+                  Feb 2020 - Feb 2021
+                </p>
               </div>
-              <p className="text-[#17191F] text-[16px]">BIM Specialist.</p>
+              <p className="text-[#17191F] text-[16px] font-satoshi">
+                BIM Specialist.
+              </p>
 
-              <ul className="space-y-2 text-[#82858F] p-2">
+              <ul className="space-y-2 text-[#82858F] font-satoshi list-disc pl-5">
                 <li className="text-sm">
-                  • Research, proposal and execution of solutions for
-                  construction product manufacturing companies.
+                  Research, proposal and execution of solutions for construction
+                  product manufacturing companies.
                 </li>
                 <li className="text-sm">
-                  • Modelling, scripting, and management of BIM assets for a
-                  wide range of manufacturing companies using BIM script for
+                  Modelling, scripting, and management of BIM assets for a wide
+                  range of manufacturing companies using BIM script for
                   Rhinoceros 3D.
                 </li>
                 <div
                   className={`${isCollapsed3 ? "hidden" : ""} text-[#82858F]`}
                 >
                   <li className="text-sm">
-                    • Creating parametric objects, families and projects in
+                    Creating parametric objects, families and projects in
                     Autodesk Revit.
                   </li>
                   <li className="text-sm">
-                    • Handling product specifications and providing technical
+                    Handling product specifications and providing technical
                     solutions for easy end-user work-flow
                   </li>
                 </div>
@@ -306,30 +310,32 @@ function Experience() {
               className="md:hidden block h-[48px] w-[144px]"
             />
             <div className="md:ml-4 w-full">
-              <div className="flex flex-col md:flex-row md:justify-between">
-                <p className="text-[#17191F] text-[20px] font-semibold">
+              <div className="flex flex-col md:flex-row md:justify-between ">
+                <p className="text-[#17191F] text-[20px] font-semibold font-satoshi">
                   Marco Palmieri Studio. Milan, Italy.
                 </p>
-                <p className="text-primary-100">June 2019 - Sept 2019</p>
+                <p className="text-primary-100 font-satoshi">
+                  June 2019 - Sept 2019
+                </p>
               </div>
-              <p className="text-[#17191F] text-[16px]">
+              <p className="text-[#17191F] text-[16px] font-satoshi">
                 Architectural Intern.
               </p>
 
-              <ul className="space-y-2 text-[#82858F] p-2">
+              <ul className="space-y-2 text-[#82858F] p-2 font-satoshi list-disc pl-5">
                 <li className="text-sm">
-                  • Focused on interior design; retrofit and art exhibition
+                  Focused on interior design; retrofit and art exhibition
                   design.
                 </li>
                 <li className="text-sm">
-                  • Drawing, modelling, rendering and documentation for designs
+                  Drawing, modelling, rendering and documentation for designs
                   implementation and presentation
                 </li>
                 <div
                   className={`${isCollapsed4 ? "hidden" : ""} text-[#82858F]`}
                 >
                   <li className="text-sm">
-                    • Software used in this studio included; SketchUp,
+                    Software used in this studio included; SketchUp,
                     Illustrator, AutoCAD and Vray.
                   </li>
                 </div>
@@ -380,29 +386,31 @@ function Experience() {
                 <p className="text-[#17191F] text-[20px] font-semibold">
                   FMA Architects Ltd. Lagos, Nigeria.
                 </p>
-                <p className="text-primary-100">Jan 2017 - Jan 2018</p>
+                <p className="text-primary-100 font-satoshi">
+                  Jan 2017 - Jan 2018
+                </p>
               </div>
-              <p className="text-[#17191F] text-[16px]">
+              <p className="text-[#17191F] text-[16px] font-satoshi">
                 Architectural Assistant.
               </p>
 
-              <ul className="space-y-2 text-[#82858F] p-2">
+              <ul className="space-y-2 text-[#82858F] p-2 font-satoshi list-disc pl-5">
                 <li className="text-sm">
-                  • My main task here involved architectural design and
+                  My main task here involved architectural design and
                   coordination
                 </li>
                 <li className="text-sm">
-                  • Production of standard approval and construction drawings
-                  for various projects.
+                  Production of standard approval and construction drawings for
+                  various projects.
                 </li>
                 <div
                   className={`${isCollapsed5 ? "hidden" : ""} text-[#82858F]`}
                 >
                   <li className="text-sm">
-                    • Multidisciplinary project coordination
+                    Multidisciplinary project coordination
                   </li>
                   <li className="text-sm">
-                    • Organization of staff training sessions.
+                    Organization of staff training sessions.
                   </li>
                 </div>
               </ul>
@@ -437,39 +445,45 @@ function Experience() {
 
           {/* Main content (card) */}
           <div className="flex flex-col md:flex-row rounded-md border border-[#D4D6DD] p-2 ml-2 flex-wrap lg:flex-nowrap w-full">
+            <div className="md:w-[530px] h-[120px] w-[360px] border-[#000000] border-2 hidden md:block  ">
+              <Image
+                src={PhNew}
+                alt="Ingrinn logo"
+                className="hidden md:block  h-[100px] mt-2 ml-[80px] "
+              />
+            </div>
             <Image
-              src={Harcourt}
+              src={PhNew}
               alt="Ingrinn logo"
-              className="hidden md:block self-start"
+              className="md:hidden block h-[48px] w-[144px]  border-2"
             />
-            <Image
-              src={Harcourt}
-              alt="Ingrinn logo"
-              className="md:hidden block h-[48px] w-[144px]"
-            />
-            <div className="md:ml-4 w-full">
-              <div className="flex flex-col md:flex-row md:justify-between">
-                <p className="text-[#17191F] text-[20px] font-semibold">
+            <div className="md:ml-4 w-full font-satoshi">
+              <div className="flex flex-col md:flex-row md:justify-between font-satoshi">
+                <p className="text-[#17191F] text-[20px] font-semibold font-satoshi">
                   Harcourt Adukeh Associates. Port-Harcourt, Nigeria.
                 </p>
                 <div>
-                  <p className="text-primary-100">June 2015 - Sept 2015</p>
-                  <p className="text-primary-100">June 2014 - Sept 2014</p>
+                  <p className="text-primary-100 font-satoshi">
+                    June 2015 - Sept 2015
+                  </p>
+                  <p className="text-primary-100 font-satoshi">
+                    June 2014 - Sept 2014
+                  </p>
                 </div>
               </div>
-              <p className="text-[#17191F] text-[16px]">
+              <p className="text-[#17191F] text-[16px] font-satoshi">
                 Architectural Internship.
               </p>
 
-              <ul className="space-y-2 text-[#82858F] p-2">
+              <ul className="space-y-2 text-[#82858F] p-2 font-satoshi list-disc pl-5">
                 <li className="text-sm">
-                  • Through site visits, meetings and co-worker discussions, I
+                  Through site visits, meetings and co-worker discussions, I
                   observed the whole process of building construction and also
                   the interaction between the architect, the client and other
                   consultants.
                 </li>
                 <li className="text-sm">
-                  • Form exploration, environmental response and concept
+                  Form exploration, environmental response and concept
                   development for the Guggenheim Museum, Helsinki, competition
                   entry
                 </li>
@@ -477,11 +491,11 @@ function Experience() {
                   className={`${isCollapsed6 ? "hidden" : ""} text-[#82858F]`}
                 >
                   <li className="text-sm">
-                    • Design resolution and presentation documentation for
+                    Design resolution and presentation documentation for
                     residential projects.
                   </li>
                   <li className="text-sm">
-                    • Working with different people at once also improved my
+                    Working with different people at once also improved my
                     inter-personal communication skills and my ability to work
                     in a team
                   </li>

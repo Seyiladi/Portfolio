@@ -71,15 +71,15 @@ function ImageGallery() {
         <div className="max-w-7xl mx-auto px-6 text-center">
           {/* Skills Section */}
 
-          <div className="inline-block py-2 px-6 bg-[#008B8B1F] rounded-full text-[#008B8B] text-sm font-medium mb-4">
+          <div className="inline-block py-2 px-6 bg-[#008B8B1F] rounded-full text-[#008B8B] text-sm font-medium mb-4 font-satoshi">
             PROJECTS
           </div>
-          <h2 className="text-2xl font-semibold mb-4">
+          <h2 className="text-2xl font-semibold mb-4 font-satoshi">
             Some of my Selected Projects
           </h2>
 
           {/* Subtitle / Description */}
-          <p className=" text-[#82858F] text-[20px] mb-8 md:px-44 leading-8 ">
+          <p className=" text-[#82858F] text-[20px] mb-8 md:px-44 leading-8 font-satoshi">
             As a Multidisciplinary BIM Coordinator, I streamline workflows,
             enhance collaboration, and optimize digital construction processes.
             Explore my projects to see how BIM-driven solutions shape smarter,
@@ -93,7 +93,7 @@ function ImageGallery() {
           <Image
             src={images[currentImage]}
             alt={`Image ${currentImage + 1}`}
-            className="w-full h-[183.11px] md:h-[500px] object-contain md:object-cover "
+            className="w-full h-[183.11px] md:h-[500px] object-contain md:object-contain "
           />
           {/* Left Arrow */}
           <button
@@ -166,7 +166,7 @@ function ImageGallery() {
               <Image
                 src={project.image}
                 alt={project.title}
-                className="w-[227px] h-[280px] object-cover mb-4"
+                className="w-[227px] h-[280px] object-contain mb-4"
               />
               <h3 className="text-xl font-semibold text-center">
                 {project.title}

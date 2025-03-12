@@ -12,15 +12,15 @@ function page() {
         <div className="max-w-7xl mx-auto px-6 text-center">
           {/* Skills Section */}
 
-          <div className="inline-block py-2 px-6 bg-[#008B8B1F] rounded-full text-[#008B8B] text-sm font-medium mb-4">
+          <div className="inline-block py-2 px-6 bg-[#008B8B1F] rounded-full text-[#008B8B] text-sm font-medium mb-4 font-satoshi ">
             CV + REFERENCES
           </div>
-          <h2 className="text-2xl font-semibold mb-4">
+          <h2 className="text-2xl font-semibold mb-4 font-satoshi ">
             My Professional Summary, Credentials & Endorsements
           </h2>
 
           {/* Subtitle / Description */}
-          <p className="text-lg text-[#82858F] text-[20px] mb-8 md:px-44 leading-8">
+          <p className="text-lg text-[#82858F] text-[20px] mb-8 md:px-44 leading-8 font-satoshi ">
             Here, you`ll find my CV outlining my expertise, along with
             references from colleagues, previous employers, and industry
             professionals who have worked alongside me.
@@ -29,7 +29,14 @@ function page() {
       </div>
       <div className="flex justify-between flex-wrap px-4 py-16 md:px-40">
         <div className="flex flex-col items-center border border-[#D4D6DD] rounded-md p-2 mt-2">
-          <Image src={SeyiCV} alt="cv" />
+          <a
+            href="/documents/SEYICV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cursor-pointer"
+          >
+            <Image src={SeyiCV} alt="cv" />
+          </a>
           <h2 className="text-[#17191F] text-[24px] font-semibold mt-4">
             Curriculum Vitae
           </h2>
@@ -42,7 +49,14 @@ function page() {
           </a>
         </div>
         <div className="flex flex-col items-center border border-[#D4D6DD] rounded-md p-2 mt-2">
-          <Image src={SeyiReference} alt="cv" />
+          <a
+            href="/documents/REFERENCES2.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cursor-pointer"
+          >
+            <Image src={SeyiReference} alt="cv" />
+          </a>
           <h2 className="text-[#17191F] text-[24px] font-semibold mt-4">
             References
           </h2>
@@ -55,7 +69,14 @@ function page() {
           </a>
         </div>
         <div className="flex flex-col items-center border border-[#D4D6DD] rounded-md p-2 mt-2">
-          <Image src={SeyiDegree} alt="cv" />
+          <a
+            href="/documents/DegreeCert.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cursor-pointer"
+          >
+            <Image src={SeyiDegree} alt="cv" />
+          </a>
           <h2 className="text-[#17191F] text-[24px] font-semibold mt-4">
             Degree Certificates
           </h2>

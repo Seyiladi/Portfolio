@@ -181,6 +181,10 @@ export const projects = [
     image: SettingProj,
     category: "BIM,MEP",
     images: [Bim1, Bim2, Bim3, Bim4, Bim5],
+    videos: [
+      "https://www.youtube.com/watch?v=hoY0ozreJvc&t=16s",
+      "https://www.youtube.com/watch?v=RJIgTB-8gT4&t=3s",
+    ],
     slug: "bim-asset-development",
     pdf: "/documents/BIMAssets.pdf",
   },

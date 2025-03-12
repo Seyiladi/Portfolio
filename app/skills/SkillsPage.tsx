@@ -56,15 +56,15 @@ function SkillsPage() {
         <div className="max-w-7xl mx-auto px-6 text-center">
           {/* Skills Section */}
 
-          <div className="inline-block py-2 px-6 bg-[#008B8B1F] rounded-full text-[#008B8B] text-sm font-medium mb-4">
+          <div className="inline-block py-2 px-6 bg-[#008B8B1F] rounded-full text-[#008B8B] text-sm font-medium mb-4 font-satoshi">
             SKILLS
           </div>
-          <h2 className="text-2xl font-semibold mb-4">
+          <h2 className="text-2xl font-semibold mb-4 font-satoshi">
             Developed Competencies and Tools
           </h2>
 
           {/* Subtitle / Description */}
-          <p className="text-lg text-[#82858F] text-[20px] mb-8 md:px-44 leading-8 ">
+          <p className="text-lg text-[#82858F] text-[20px] mb-8 md:px-44 leading-8 font-satoshi">
             My expertise in Buildings is built on a strong foundation of
             technical skills and industry knowledge. I have acquired a range of
             competencies in 3D modeling, coordination, and data management,
@@ -106,7 +106,7 @@ function SkillsPage() {
               ].map((skill) => (
                 <span
                   key={skill}
-                  className="inline-block text-[16px] bg-white text-[#17191F] text-sm font-medium py-[12px] px-[16px] rounded-lg border border-[#D4D6DD] mr-2"
+                  className="inline-block text-[16px] bg-white text-[#17191F] text-sm font-medium py-[12px] px-[16px] rounded-lg border border-[#D4D6DD] mr-2 font-satoshi"
                 >
                   {skill}
                 </span>
@@ -118,7 +118,7 @@ function SkillsPage() {
           <div className="mt-8">
             <div className="flex ">
               <Image src={HR} alt="hr" />
-              <span className="text-xl font-semibold text-primary-100 ml-2">
+              <span className="text-xl font-semibold text-primary-100 ml-2 font-satoshi">
                 Soft
               </span>
             </div>
@@ -134,7 +134,7 @@ function SkillsPage() {
               ].map((skill) => (
                 <span
                   key={skill}
-                  className="inline-block bg-white text-[16px] text-[#17191F] text-sm font-medium  py-[12px] px-[16px] rounded-lg border border-[#D4D6DD] mr-2"
+                  className="inline-block bg-white text-[16px] text-[#17191F] text-sm font-medium  py-[12px] px-[16px] rounded-lg border border-[#D4D6DD] mr-2 font-satoshi"
                 >
                   {skill}
                 </span>
@@ -147,7 +147,7 @@ function SkillsPage() {
         <div className="mt-8 md:mb-[100px]">
           <div className="flex mb-4">
             <Image src={HR} alt="hr" />
-            <span className="text-xl font-semibold text-primary-100 ml-2">
+            <span className="text-xl font-semibold text-primary-100 ml-2 font-satoshi">
               Software
             </span>
           </div>
