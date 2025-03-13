@@ -100,7 +100,7 @@ export default function Home() {
                     Architectural Practice
                   </h2>
                   <p className="text-[16px] text-[#008B8B] md:mt-28 font-satoshi">
-                    5 projects
+                    4 projects
                   </p>
                 </div>
                 <Image src={Achi} alt="arc-des" className="mt-8 md:mt-0" />
@@ -136,7 +136,7 @@ export default function Home() {
                   <h2 className=" md:text-[24px] text-black">University</h2>
 
                   <p className="text-[16px] text-[#008B8B] md:mt-36">
-                    5 projects
+                    6 projects
                   </p>
                 </div>
                 <Image src={UniversityNew} alt="arc-des" className="" />
@@ -151,7 +151,7 @@ export default function Home() {
                   <h2 className=" md:text-[24px] text-black">Structural</h2>
 
                   <p className="text-[16px] text-[#008B8B] md:mt-4 md:mb-10">
-                    6 projects
+                    5 projects
                   </p>
                 </div>
                 <Image

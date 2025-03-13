@@ -191,7 +191,7 @@ export const projects = [
   {
     title: "Two Hulls House",
     image: HullProj,
-    category: "Architectural Practice, BIM, Structural",
+    category: "University,BIM, Structural",
     images: [Hull1, Hull2, Hull3, Hull4, Hull5, Hull6, Hull7],
     slug: "two-hulls-house",
     pdf: "/documents/Hulls.pdf",
@@ -215,7 +215,7 @@ export const projects = [
   {
     title: "Merseyside Regional Assembly",
     image: MRA_Icon,
-    category: "University, BIM, Structural",
+    category: "University, BIM",
     images: [
       Merseyside1,
       Merseyside2,
