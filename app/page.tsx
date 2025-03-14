@@ -54,12 +54,14 @@ export default function Home() {
             strengths, and aspirations.
           </p>
           <div className="mt-[32px] flex gap-4 flex-wrap">
-            <a
-              href="mailto:seyiladi@gmail.com"
-              className="bg-[#17191F] text-white px-6 py-2 rounded-lg h-[56px] w-full md:w-[240px] flex justify-center items-center font-satoshi "
+            <button
+              onClick={() =>
+                (window.location.href = "mailto:seyiladi@gmail.com")
+              }
+              className="bg-[#17191F] text-white px-6 py-2 rounded-lg h-[56px] w-full md:w-[240px] flex justify-center items-center font-satoshi"
             >
               Contact Me
-            </a>
+            </button>
 
             <Link
               href="/projects"
